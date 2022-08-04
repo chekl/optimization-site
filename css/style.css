@@ -1,0 +1,183 @@
+body {
+    font-family: 'Roboto';
+}
+
+.nav {
+    position: sticky;
+    left:0;
+    top:0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.navbar-mobile-btn {
+    padding: 5px 10px;
+    border: #c9c8c8 1px solid;
+    border-radius: 5px;
+    color: #c9c8c8;
+    display: none;
+    font-weight: 700;
+}
+
+.navbar {
+    width: 80%;    
+    display: flex;    
+    align-items:center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.nav-links {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    color: #525252;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #111;
+}
+
+.btn-nav {
+    width:100px;
+    height: 30px;
+    color:#fff;
+    background-color: #111;
+    border-color: #111;
+}
+
+.section {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.logo-img {
+    width: 50%;
+}
+
+.section-header {
+    width:50%;
+}
+
+.btn-find {
+    color:#fff;
+    background-color: coral;
+    border-color: transparent;
+    border-radius: 5px;
+    width: 40%;
+    height: 33px;
+}
+
+.game-section {
+    background-color: #353535;
+    color:white;
+}
+
+.game-section-header {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+.cards {
+    display:flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.card-block {
+    width: 30%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.prising {
+    color: #242424;
+    background-color: #f5f5f5;
+}
+
+.price-block {
+    width:45%;
+}
+
+.sub-block {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.btn-subsrcibe {
+    width: 100%;
+}
+
+.email-input::placeholder {
+    color: #525252;
+}
+
+.email-input {
+    width: 98%;
+    border-radius: 5px;
+    border-color: transparent;
+    height: 25px;
+    margin: 10px;
+}
+
+.ending {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .card-block {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-links, .btn-nav{
+        display: none;
+    }
+
+    .navbar-mobile-btn{
+        display: block;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .section-header {
+        width: 100%;
+    }
+
+    .logo-img {
+        width: 100%;
+    }
+
+    .card-block {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .price-block {
+        width: 100%;
+    }
+}
